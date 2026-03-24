@@ -1,0 +1,116 @@
+# AGENTS.md - {{PROJECT_NAME}}
+
+## Project Description
+
+{{PROJECT_DESCRIPTION}}
+
+**Type:** {{PROJECT_TYPE}}
+**Stack:** {{PROJECT_STACK}}
+**Created:** {{DATE}}
+
+---
+
+## Reference Documentation
+
+{{#if REFERENCE_DOCS}}
+{{REFERENCE_DOCS}}
+{{else}}
+_No external documentation provided._
+{{/if}}
+
+---
+
+## Guidelines for AI Agents
+
+### Development Principles
+
+1. **Plan before implementing** - Create a plan in the plans folder before making significant changes
+2. **Testing is mandatory** - All new functionality must include tests
+3. **Atomic commits** - Small, well-documented changes
+4. **Code review** - Request review before merging important changes
+
+### Project Structure
+
+```
+{{PROJECT_STRUCTURE}}
+```
+
+---
+
+## Plans Section
+
+### Plans Location
+
+All implementation plans must be saved in:
+- **Folder:** `{{PLANS_FOLDER}}`
+- **Naming format:** `YYYY-MM-DD-descriptive-name.md`
+
+### Plan Requirements
+
+Each plan MUST include:
+
+1. **Clear objective** - What will be achieved
+2. **Acceptance criteria** - How we know it's complete
+3. **Testing strategy** - Choose one or both:
+   - **Unit Testing** - Unit tests for business logic
+   - **BDD (Behavior Driven Development)** - Gherkin scenarios for complex features
+
+### Template
+
+Use the template at `{{PLANS_FOLDER}}/_template.md`
+
+---
+
+## Auto-Retrospective Section
+
+### Continuous Improvement Process
+
+After completing each significant implementation, the agent MUST:
+
+1. **Evaluate the process:**
+   - What worked well?
+   - What could be improved?
+   - Were there unexpected obstacles?
+
+2. **Propose improvements to this AGENTS.md:**
+   - New conventions discovered
+   - Useful patterns identified
+   - Adjustments to plan structure
+
+3. **Proposal format:**
+
+```markdown
+## Improvement Proposal - [Date]
+
+### Context
+[What implementation was completed]
+
+### Learnings
+- [Learning 1]
+- [Learning 2]
+
+### Suggested Changes to AGENTS.md
+- [ ] Add section about [topic]
+- [ ] Modify convention for [aspect]
+- [ ] Document pattern for [pattern]
+```
+
+4. **Apply improvements:** If the user approves, update this document
+
+---
+
+## Active Skills
+
+{{#if ACTIVE_SKILLS}}
+{{ACTIVE_SKILLS}}
+{{else}}
+_No additional skills configured._
+{{/if}}
+
+---
+
+## Change History
+
+| Date | Change | Author |
+|------|--------|--------|
+| {{DATE}} | Initial creation | init-project skill |
